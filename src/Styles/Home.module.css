@@ -1,0 +1,170 @@
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.hero{
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 0px 150px;
+    column-gap: 20px;
+}
+.leftHero{
+    width: 50%;
+}
+.leftHero h1{
+    /* color: rgb(235, 235, 235); */
+    color: black;
+    font-size: 68px;
+    width: 90%;
+    font-weight: 700;
+}
+.leftHero span{
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+.leftHero p{
+    /* color: rgb(219, 219, 219); */
+    color: rgb(95, 95, 95);
+    font-size: 16px;
+    width: 90%;
+    text-align: justify;
+    font-weight: 500;
+}
+button{
+    margin-top: 40px;
+    padding: 10px 30px;
+    border: none;
+    background-color: rgb(105, 105, 221);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 7px 15px rgba(105, 105, 221, 0.34);
+    width: fit-content;
+}
+button:hover{
+    background-color: rgb(1, 1, 121);
+    transition: 500ms;
+    cursor: pointer;
+}
+.rightHero{
+    width: 50%;
+}
+.rightHero img{
+    width: 100%;
+    height: 500px;
+}
+
+ 
+.services{
+    background-color: whitesmoke;
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.services .top{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    text-align: center;
+    align-items: center;
+}
+.services .top h1{
+    font-size: 38px;
+}
+.services .top p{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(88, 88, 88);
+}
+
+.services .bottom{
+    display: flex;
+    column-gap: 2%;
+    justify-content: space-between;
+}
+.serviceCard{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border: 1px solid rgb(168, 168, 168);
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(97, 97, 97);
+}
+.smile{
+    background-color: rgba(249, 196, 105, 0.31);
+    color: rgb(195, 146, 0);
+    font-size: 35px;
+    padding: 7px;
+    border-radius: 100%;
+}
+.school{
+    background-color: rgba(105, 249, 155, 0.31);
+    color: rgb(0, 195, 75);
+    font-size: 35px;
+    padding: 7px;
+    border-radius: 100%;
+}
+.hanger{
+    background-color: rgba(105, 163, 249, 0.31);
+    color: rgb(0, 65, 195);
+    font-size: 35px;
+    padding: 7px;
+    border-radius: 100%;
+}
+.bag{
+    background-color: rgba(199, 105, 249, 0.31);
+    color: rgb(146, 0, 195);
+    font-size: 35px;
+    padding: 7px;
+    border-radius: 100%;
+}
+
+
+.measure{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8%;
+    padding: 150px;
+    height: 100vh;
+    align-items: center;
+}
+.leftMeasure{
+    width: 50%;
+}
+.leftMeasure img{
+    width: 100%;
+    height: 500px;
+}
+/* .leftMeasure p{
+    width: 70%;
+} */
+.rightMeasure{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    column-gap: 3px;
+}
+.rightMeasure h1{
+    font-size: 38px;
+}
+.rightMeasure p{
+    text-align: justify;
+    font-weight: 500;
+    color: rgb(82, 82, 82);
+    font-size: 15px;
+}
