@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Style from "../Styles/Home.module.css"
-import image from "../Images/girl.svg"
+import girl from "../Images/girl.svg"
 import measure from "../Images/measure.svg"
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
                 <button>Get Started</button>
             </div>
             <div className={Style.rightHero}>
-                <img src={image} alt="svg image" />
+                <img src={girl} alt="svg image" />
             </div>
 
         </div>

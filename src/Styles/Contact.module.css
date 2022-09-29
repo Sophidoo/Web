@@ -1,0 +1,57 @@
+.contact{
+    display: flex;
+    padding: 0px 150px;
+    align-items: center;
+    height: 83.5vh;
+}
+.leftcontact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.leftcontact h1{
+    font-size: 45px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 70%;
+}
+.inputWrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.inputWrapper input{
+    padding: 7px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(172, 172, 172);
+}
+textarea{
+    padding: 7px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(172, 172, 172);
+}
+input:focus{
+    border: 1px solid rgb(105, 105, 221);
+}
+textarea:focus{
+    border: 1px solid rgb(105, 105, 221);
+}
+input:focus{
+    border: 1px solid rgb(105, 105, 221);
+}
+.rightcontact{
+    width: 50%;
+}
+.rightcontact img{
+    width: 100%;
+}
+form button{
+    width: 100%;
+    margin-top: 6px;
+}

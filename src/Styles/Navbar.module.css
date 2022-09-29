@@ -1,0 +1,133 @@
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 150px;
+  font-weight: 500;
+  font-size: 14px;
+  align-items: center;
+  background-color: rgb(105, 105, 221);
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 20;
+}
+.logo{
+  font-size: 14px;
+  letter-spacing: 7px;
+}
+.navbar li{
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
+  list-style-type: none;
+}
+.navbar li .link{
+  color: white;
+  text-decoration: none;
+  position: relative;
+  z-index: 20px;
+}
+.navbar li .link:hover{
+  color: rgb(1, 1, 121);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 300ms;
+}
+.default{
+    font-size: 18px;
+    color: white;
+}
+.default:hover{
+    cursor: pointer;
+}
+.navbar .cart{
+  font-size: 18px;
+  color: rgb(1, 1, 121);
+}
+.navbar .cart:hover{
+  cursor: pointer;
+  color: rgb(1, 1, 121);
+}
+
+
+.sidebar{
+    padding: 40px 30px;
+    position: fixed;
+    right: 0px;
+    background-color: white;
+    width: 25vw;
+    top: 58px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+    z-index: 10;
+    height: 100vh;
+    box-shadow: 3px 0px 20px rgb(224, 224, 224);
+}
+.hide{
+    display: none;
+}
+.sidebar h3{
+    text-align: center;
+}
+.cartItems{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    padding-bottom: 15px;
+}
+.cardInformation{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.cardInformation img{
+    width: 48px;
+    height: 48px;
+    background-color: gray;
+    border-radius: 10px;
+    object-fit: cover;
+    background-position: bottom;
+}
+.cardInformation h4{
+    font-size: 16px;
+}
+.cardInformation p{
+    font-size: 14px;
+}
+.cardname{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.delete{
+    font-size: 22px;
+}
+.delete:hover{
+    color: rgb(201, 0, 0);
+    cursor: pointer;
+    transition: 500ms;
+}
+.clear{
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 15px;
+}
+.clear:hover{
+    cursor: pointer;
+    transition: 500ms;
+    color: rgb(201, 0, 0);
+}

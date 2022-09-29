@@ -11,38 +11,6 @@ body {
 }
 
 
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 150px;
-  font-weight: 500;
-  font-size: 14px;
-  align-items: center;
-  background-color: rgb(105, 105, 221);
-  color: white;
-}
-.logo{
-  font-size: 14px;
-  letter-spacing: 7px;
-}
-.navbar li{
-  display: flex;
-  column-gap: 40px;
-  align-items: center;
-  list-style-type: none;
-}
-.navbar li .link{
-  color: white;
-  text-decoration: none;
-  position: relative;
-  z-index: 20px;
-}
-.navbar li .link:hover{
-  color: rgb(1, 1, 121);
-  text-decoration: none;
-  cursor: pointer;
-  transition: 300ms;
-}
 
 
 .footer{
@@ -82,9 +50,10 @@ body {
   display: none;
   transition: 500ms;
 }
-.card img:hover + span{
+.card img:hover + .cart{
   display: flex;
 }
+
 .card .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,

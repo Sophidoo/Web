@@ -3,13 +3,13 @@ const Productcard = (props) =>{
     return <>
 
         <div className="card">
-            <img src={props.image} alt="" />
+            <img src={props.pic} alt="" />
             <span className="material-symbols-outlined cart" >
                 shopping_cart
             </span>
             <div className="productname">
-                <h3>Pink Hoodie</h3>
-                <p>$50.00</p>
+                <h3>{props.name}</h3>
+                <p>{props.price}</p>
             </div>
         </div>
 
