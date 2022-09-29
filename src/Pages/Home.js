@@ -18,7 +18,7 @@ const Home = () => {
                 <button>Get Started</button>
             </div>
             <div className={Style.rightHero}>
-                <img src={girl} alt="svg image" />
+                <img src={girl} alt="" />
             </div>
 
         </div>
