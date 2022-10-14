@@ -78,3 +78,28 @@ body {
   font-weight: 500;
   color: rgb(81, 81, 81);
 }
+
+
+
+
+@media(max-width: 1330px){
+    .footer{
+      padding: 20px 80px;
+    }
+}
+@media(max-width: 100px){
+  .footer{
+    padding: 20px 50px;
+  }
+  .footer p{
+    font-size: 14px;
+  }
+}
+@media(max-width: 500px){
+  .footer{
+    padding: 20px 30px;
+  }
+  .footer p{
+    font-size: 13px;
+  }
+}

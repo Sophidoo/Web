@@ -21,19 +21,19 @@ body {
   font-size: 14px;
   letter-spacing: 7px;
 }
-.navbar li{
+.navbar ul{
   display: flex;
   column-gap: 40px;
   align-items: center;
   list-style-type: none;
 }
-.navbar li .link{
+.navbar ul .link{
   color: white;
   text-decoration: none;
   position: relative;
   z-index: 20px;
 }
-.navbar li .link:hover{
+.navbar ul .link:hover{
   color: rgb(1, 1, 121);
   text-decoration: none;
   cursor: pointer;
@@ -53,6 +53,43 @@ body {
 .navbar .cart:hover{
   cursor: pointer;
   color: rgb(1, 1, 121);
+}
+.navbar .listIcon{
+  display: none;
+  color: white;
+}
+.navbar .listIcon:hover{
+  cursor: pointer;
+}
+.responsiveNav{
+  position: fixed;
+  top: 64px;
+  right: 0px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(109, 109, 109, 0.381);
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.responsiveNavhide{
+  display: none;
+}
+.responsiveNav .links{
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+}
+.responsiveNav .cartButton{
+  background-color: rgb(105, 105, 221);
+  width: 100%;
+}
+.responsiveNav .cartButton:hover{
+  background-color: rgb(1, 1, 121);
+  cursor: pointer;
+  transition: 500ms;
 }
 
 
@@ -144,7 +181,22 @@ body {
   }
 }
 @media(max-width: 750px){
-  .navbar li{
+  .listIcon{
+    display: flex !important;
+  }
+  .navbar .link{
     display: none;
+  }
+}
+@media(max-width: 500px){
+  .navbar{
+    padding: 20px 30px;
+  }
+  .logo{
+    font-size: 13px;
+    letter-spacing: 5px;
+  }
+  .responsiveNav{
+    padding: 30px;
   }
 }

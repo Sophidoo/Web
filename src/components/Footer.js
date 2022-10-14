@@ -3,7 +3,7 @@ const Footer = () => {
     return<>
 
         <div className="footer">
-            <p>&copy; All Rights Reserved, Sophia</p>
+            <p>Made with love🥰</p>
         </div>
 
     </>

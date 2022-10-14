@@ -11,12 +11,21 @@ const Navbar = () => {
     }
 
     const[toggle, setToggle] = useState(false)
+    const[navtoggle, setNavtoggle] = useState(false)
 
     const toggling = () => {
         if(toggle){
             setToggle(false)
         }else{
             setToggle(true)
+        }
+        
+    }
+    const navtoggling = () => {
+        if(navtoggle){
+            setNavtoggle(false)
+        }else{
+            setNavtoggle(true)
         }
         
     }
@@ -28,7 +37,7 @@ const Navbar = () => {
                 MEGVIN
             </div>
             <div>
-                <li>
+                <ul>
                     <NavLink to = "/" style = {({isActive}) => isActive? activeStyle : undefined} end className={Style.link}>
                         Home
                     </NavLink>
@@ -41,14 +50,33 @@ const Navbar = () => {
                     <NavLink to = "/contact-us" style = {({isActive}) => isActive? activeStyle : undefined} end className={Style.link}>
                         Contact US
                     </NavLink>
-                    <span className={`material-symbols-outlined cart ${toggle? Style.cart : Style.default}`} onClick={() => toggling()}>
+                    <span className={`material-symbols-outlined ${Style.link} ${toggle? Style.cart : Style.default}`} onClick={() => toggling()}>
                         shopping_cart
                     </span>
-                    
-                </li>
+                    <span className={`material-symbols-outlined ${Style.listIcon}`} onClick={() => navtoggling()}>
+                        menu
+                    </span>
+                </ul>
             </div>
-
+            <div className={navtoggle? Style.responsiveNav : Style.responsiveNavhide}>
+                    <NavLink to = "/" style = {({isActive}) => isActive? activeStyle : undefined} end className={Style.links}>
+                        Home
+                    </NavLink>
+                    <NavLink to = "/about-us" style = {({isActive}) => isActive? activeStyle : undefined} end className={Style.links}>
+                        About
+                    </NavLink>
+                    <NavLink to = "/product" style = {({isActive}) => isActive? activeStyle : undefined} end className={Style.links}>
+                        Product
+                    </NavLink>
+                    <NavLink to = "/contact-us" style = {({isActive}) => isActive? activeStyle : undefined} end className={Style.links}>
+                        Contact US
+                    </NavLink>
+                    <button className={Style.cartButton}>
+                        Add to Cart
+                    </button>
+            </div>
         </div>
+
         <div className={toggle? Style.sidebar : Style.hide}>
         <h3>5 Items In Cart</h3>
             <div className={Style.cartItems}>
