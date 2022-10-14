@@ -25,16 +25,17 @@ form{
     row-gap: 3px;
 }
 .inputWrapper input{
-    padding: 7px 15px;
+    padding: 7px 10px;
     border-radius: 5px;
     outline: none;
     border: 1px solid rgb(172, 172, 172);
 }
 textarea{
-    padding: 7px 15px;
+    padding: 7px 10px;
     border-radius: 5px;
     outline: none;
     border: 1px solid rgb(172, 172, 172);
+    resize: none;
 }
 input:focus{
     border: 1px solid rgb(105, 105, 221);

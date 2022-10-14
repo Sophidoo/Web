@@ -67,7 +67,7 @@ body {
     flex-direction: column;
     row-gap: 17px;
     z-index: 10;
-    height: 100vh;
+    min-height: 100vh;
     box-shadow: 3px 0px 20px rgb(224, 224, 224);
 }
 .hide{
@@ -130,4 +130,21 @@ body {
     cursor: pointer;
     transition: 500ms;
     color: rgb(201, 0, 0);
+}
+
+
+@media(max-width: 1330px){
+  .navbar{
+    padding: 20px 80px;
+  }
+}
+@media(max-width: 1000px){
+  .navbar{
+    padding: 20px 50px;
+  }
+}
+@media(max-width: 750px){
+  .navbar li{
+    display: none;
+  }
 }

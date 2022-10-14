@@ -20,6 +20,8 @@ body {
   padding: 20px 150px;
   font-size: 16px;
   font-weight: 500;
+  z-index: 10;
+  position: relative;
 }
 .card{
   width: 23.5%;
