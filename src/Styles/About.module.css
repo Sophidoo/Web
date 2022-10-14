@@ -76,3 +76,87 @@
     font-weight: 500;
     text-align: justify;
 }
+
+
+@media (max-width: 1330px){
+    .heading{
+        padding: 150px 80px;
+    }
+    .teamWrapper{
+        padding: 150px 80px;
+    }
+}
+@media(max-width: 1000px){
+    .heading h1{
+        font-size: 35px;
+    }
+    .heading p{
+        font-size: 14px;
+    }
+    .teamHeading h1{
+        font-size: 35px;
+    }
+    .teamHeading p{
+        font-size: 14px;
+    }
+    .teamcard{
+        flex-wrap: wrap;
+        column-gap: 2%;
+    }
+    .card{
+        flex-direction: row;
+        width: 100%;
+        column-gap: 40px;
+        align-items: center;
+    }
+    .person p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 750px){
+    .heading{
+        padding: 150px 50px;
+    }
+    .teamWrapper{
+        padding: 150px 50px;
+    }
+}
+@media(max-width: 600px){
+    .heading{
+        padding: 100px 50px;
+    }
+    .teamWrapper{
+        padding: 100px 50px;
+    }
+    .heading h1{
+        font-size: 30px;
+    }
+    .teamHeading h1{
+        font-size: 30px;
+    }
+    .card{
+        flex-direction: column;
+    }
+}
+@media(max-width: 500px){
+    .heading{
+        padding: 100px 30px;
+    }
+    .heading h1{
+        font-size: 25px;
+    }
+    .teamHeading h1{
+        font-size: 25px;
+    }
+    .teamWrapper{
+        padding: 100px 30px;
+    }
+}
+@media(max-width: 400px){
+    .card{
+        padding: 10px;
+    }
+    .card img{
+        height: 200px;
+    }
+}
